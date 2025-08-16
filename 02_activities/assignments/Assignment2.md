@@ -53,9 +53,37 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
-```
-Your answer...
-```
+Type 1 – Overwrite (Customer Address)
+Table Name: Customer Address
+Primary Key: customer_id
+Description:
+In this model, each customer has a single address record. When a customer’s address changes, the old address is overwritten with the new one.
+Use Case:
+Suitable when historical address data is not important, and only the most recent address is needed.
+Pros:
+Simple and efficient.
+Saves storage space.
+Cons:
+No historical tracking of address changes.
+
+Type 2 – Retain History (Customer_Address_History)
+Table Name: Customer_Address_History
+Primary Key: address_id (surrogate key)
+Foreign Key: customer_id
+Additional Columns:
+start_date
+end_date
+is_current
+Description:
+This model retains historical address changes by inserting a new row each time the customer’s address changes. The is_current flag indicates the current active address.
+Use Case:
+Ideal when it’s important to maintain a full history of customer addresses, such as for auditing or trend analysis.
+Pros:
+Full historical tracking.
+Allows for reporting and analysis over time.
+Cons:
+More complex queries.
+Requires more storage.
 
 ***
 

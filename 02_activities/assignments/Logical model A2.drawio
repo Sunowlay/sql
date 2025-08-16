@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.0.9">
+  <diagram name="Page-1" id="lITlww-zogel_HXPsuFp">
+    <mxGraphModel dx="1426" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-2" value="&lt;b&gt;Employee&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Employee_id (PK)&lt;/div&gt;&lt;div&gt;first_name&lt;/div&gt;&lt;div&gt;last_name&lt;/div&gt;&lt;div&gt;email&lt;/div&gt;&lt;div&gt;hire_date&lt;/div&gt;&lt;div&gt;position&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="30" y="60" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-3" value="&lt;b&gt;Shift&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;shift_id (PK)&lt;/div&gt;&lt;div&gt;employee_id (FK)&lt;/div&gt;&lt;div&gt;shift_date&lt;/div&gt;&lt;div&gt;Shift_type&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="310" y="60" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-4" value="&lt;b&gt;Date&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;date-id (PK)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;date&lt;/b&gt;&lt;/div&gt;&lt;div&gt;day_of_week&lt;/div&gt;&lt;div&gt;month&lt;/div&gt;&lt;div&gt;quarter&lt;/div&gt;&lt;div&gt;year&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="610" y="60" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-5" value="&lt;b&gt;Customer&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;customer_id (PK)&lt;/div&gt;&lt;div&gt;first_name&lt;/div&gt;&lt;div&gt;last_name&lt;/div&gt;&lt;div&gt;email&lt;/div&gt;&lt;div&gt;phone&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="30" y="310" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-6" value="&lt;b&gt;Order&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;order_id (PK)&lt;/div&gt;&lt;div&gt;customer_id (FK)&lt;/div&gt;&lt;div&gt;order_date&lt;/div&gt;&lt;div&gt;total_amount&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320" y="300" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-7" value="&lt;b&gt;Sales&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;sale_id (PK)&lt;/div&gt;&lt;div&gt;order_id (FK)&lt;/div&gt;&lt;div&gt;book_id (FK)&lt;/div&gt;&lt;div&gt;quantity&lt;/div&gt;&lt;div&gt;unit_price&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="620" y="300" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-8" value="&lt;b&gt;Customer Address (Type 1)&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Customer_id (PK)&lt;br&gt;street&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;city&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;state&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;postal_code&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;country&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="30" y="550" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-9" value="&lt;b&gt;Customer_Address_history (Type 2)&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;address_id (PK)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;customer_id (FK)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;street&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;city&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;state&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;postal_code&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;country&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;start_date&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;end_date&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;is_current&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320" y="550" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-10" value="&lt;b&gt;Book&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;book_id (PK)&lt;/div&gt;&lt;div&gt;title&lt;/div&gt;&lt;div&gt;author&lt;/div&gt;&lt;div&gt;genre&lt;/div&gt;&lt;div&gt;price&lt;/div&gt;&lt;div&gt;publisher&lt;/div&gt;&lt;div&gt;publication_date&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="630" y="545" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="310" as="sourcePoint" />
+            <mxPoint x="110" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="111.52" y="470" as="sourcePoint" />
+            <mxPoint x="112" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="150" as="sourcePoint" />
+            <mxPoint x="200" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="150" as="sourcePoint" />
+            <mxPoint x="600" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-16" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="389.5" as="sourcePoint" />
+            <mxPoint x="320" y="389.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="389.5" as="sourcePoint" />
+            <mxPoint x="620" y="389.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C9W4dIHI9Zb4U8phVIaL-18" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="640" as="sourcePoint" />
+            <mxPoint x="210" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
